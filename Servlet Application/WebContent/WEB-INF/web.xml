@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Servlet Application</display-name>
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>com.xoriant.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>controllerServlet</servlet-name>
+    <servlet-class>com.xoriant.ControllerServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>compbooksServlet</servlet-name>
+    <servlet-class>com.xoriant.ComputerBookServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>histbooksServlet</servlet-name>
+    <servlet-class>com.xoriant.HistoryBookServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>showcartServlet</servlet-name>
+    <servlet-class>com.xoriant.ShowCartServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>logoutServlet</servlet-name>
+    <servlet-class>com.xoriant.LogoutServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>controllerServlet</servlet-name>
+    <url-pattern>/controller</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>compbooksServlet</servlet-name>
+    <url-pattern>/compbooks</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>histbooksServlet</servlet-name>
+    <url-pattern>/histbooks</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>showcartServlet</servlet-name>
+    <url-pattern>/showcart</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>logoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+  	<welcome-file>login.html</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
